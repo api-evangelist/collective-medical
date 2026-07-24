@@ -1,8 +1,28 @@
 aid: collective-medical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/collective-medical.png
 name: Collective Medical
-description: 'Collective Medical is a company surfaced as a portfolio company of bessemer-venture-partners,
-  kleiner-perkins and added to the API Evangelist network as a stub for enrichment. Sector: healthcare.
-  This profile is a lead awaiting the enrichment pipeline.'
+description: 'Collective Medical is a full-continuum, real-time care collaboration
+  network for healthcare, connecting hospitals, health systems, post-acute providers,
+  health plans, and payers so care teams can coordinate around complex, high-risk,
+  and vulnerable patients across the entire patient journey. Founded in Utah and backed
+  by Bessemer Venture Partners and Kleiner Perkins, the platform is known for its
+  real-time event notifications, ADT-based care-coordination alerts, and shared
+  clinical insights used by emergency departments and care-management teams. Collective
+  Medical was acquired by PointClickCare in 2020 and is now fully integrated into
+  PointClickCare; its former developer, login, support, and legal surfaces are served
+  through PointClickCare properties (developer.pointclickcare.com and pointclickcare.com).
+  This profile tracks the Collective Medical brand within the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/collective-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,21 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: pointclickcare
+x-acquired-year: 2020
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Care Coordination
+- Health Information Exchange
+- Interoperability
+- Population Health
+- Care Collaboration
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +53,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/collective-medical-domain-security.yml
 - type: Website
   url: https://www.collectivemedicaltech.com/
+- type: DeveloperPortal
+  url: https://developer.pointclickcare.com/spa
+- type: Login
+  url: https://login.pointclickcare.com/home/userLogin.xhtml
+- type: Support
+  url: https://pointclickcare.com/customer-support/
+- type: Blog
+  url: https://pointclickcare.com/blog/
+- type: TermsOfService
+  url: https://pointclickcare.com/legal/terms-conditions/
+- type: PrivacyPolicy
+  url: https://pointclickcare.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
